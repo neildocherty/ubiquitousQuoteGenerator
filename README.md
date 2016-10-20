@@ -10,7 +10,6 @@ I would like to build up a portfolio of small projects. This is a contribution t
 
 ## Installation
 
-Simple...
 1.Clone the repo
 2.`npm install`
 3.Add your Unsplash.com API key. Replace `YOUR_KEY` in the routes/images.js file with your own key.
