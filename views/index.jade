@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div#container
+          div#image
+          div#quote-container
+            div#quote I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.
+            div#name Maya Angelou
+            div.row
+              button.icon.refresh(onclick='load()')
+                img(src="images/refresh.svg",alt="new quote")
+              button.icon.twitter(onclick='tweetQuote()')
+                img(src="images/twitter.svg",alt="tweet this quote")
+          div.image-credit
+            a(href="#",target="_blank",id="credit-link")
+              span#credit-name
+                name
