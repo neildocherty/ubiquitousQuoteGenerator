@@ -3,7 +3,7 @@ var request = require('request');
 
 var router = express.Router();
 
-var apiKey = 'YOUR_KEY'
+var apiKey = process.env.UNSPLASH_ID;
 
 /* GET images. */
 router.get('/', function(req, res, next) {
