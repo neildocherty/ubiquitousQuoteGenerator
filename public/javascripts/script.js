@@ -5,14 +5,9 @@ var container = document.getElementById('container'),
 function load(){
   getImage()
   getQuote()
-  setQuotePosition()
 }
 
 load()
-
-window.onresize = function(event) {
-  setQuotePosition()
-}
 
 
 // Get an image from the Unsplash API. Set the it as the background of the #image div. Use the user information to add attribution.
@@ -41,7 +36,7 @@ function getImage() {
 
 
 // Retrieve a random quote from a list.
-// TODO: Find a good API and implement that.
+// TODO: Find a good quote API and implement that.
 function getQuote() {
 
   let xhr = new XMLHttpRequest()
@@ -59,7 +54,6 @@ function getQuote() {
       document.getElementById("quote").innerHTML = quote.text
       document.getElementById("name").innerHTML = quote.attr
 
-      setQuotePosition()
     }
   }
 
